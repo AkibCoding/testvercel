@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Deployment | Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body { background-color: #000; color: white; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #fff, #888); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <section class="h-screen flex flex-col justify-center items-center text-center px-4">
+        <h1 class="text-6xl md:text-8xl font-bold gradient-text mb-6" data-aos="fade-up" data-aos-duration="1000">
+            Push to deploy.
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-400 max-w-2xl" data-aos="fade-up" data-aos-delay="200">
+            Experience the future of web hosting. Zero configuration, global edge network, and ultra-fast CI/CD pipelines.
+        </p>
+        <div class="mt-10" data-aos="fade-up" data-aos-delay="400">
+            <div class="px-8 py-3 bg-white text-black rounded-full font-semibold cursor-pointer hover:bg-gray-200 transition">
+                Start the Lab
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass p-8 rounded-3xl" data-aos="fade-right">
+                <h3 class="text-2xl font-bold mb-4">Edge Network</h3>
+                <p class="text-gray-400">Your content is delivered from the server closest to your users, instantly.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl" data-aos="fade-up">
+                <h3 class="text-2xl font-bold mb-4">Git Integration</h3>
+                <p class="text-gray-400">Every commit triggered a build. Every PR gets a preview URL.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl" data-aos="fade-left">
+                <h3 class="text-2xl font-bold mb-4">Serverless</h3>
+                <p class="text-gray-400">Scale to millions of users without managing a single server instance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 text-center border-t border-zinc-800">
+        <p class="text-zinc-500 italic">"The best way to predict the future is to deploy it."</p>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: false });
+    </script>
+</body>
+</html>
